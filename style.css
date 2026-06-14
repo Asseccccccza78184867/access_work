@@ -721,12 +721,17 @@ margin-top:5px;
     border-radius:50%;
 }
 
+/* =======================
+   Mobile Responsive
+======================= */
 
-/* ===========================
-   Responsive Mobile
-=========================== */
+@media screen and (max-width:768px){
 
-@media (max-width: 768px){
+body{
+    overflow-x:hidden;
+}
+
+/* Navbar */
 
 nav{
     padding:15px 20px;
@@ -734,37 +739,53 @@ nav{
     gap:15px;
 }
 
+.nav-right{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
 .menu{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:15px;
+    gap:10px;
 }
 
-.menu a{
-    font-size:16px;
+.menu li a{
+    font-size:15px;
 }
+
+/* Hero */
 
 .hero{
     height:auto;
-    padding:120px 20px 80px;
+    min-height:100vh;
 }
 
-.hero-content,
-.content{
+.content,
+.hero-content{
     width:100%;
+    padding:0 20px;
     text-align:center;
 }
 
-.hero-content h1,
-.content h1{
-    font-size:38px;
+.content h1,
+.hero-content h1{
+    font-size:35px;
 }
 
-.hero-content p,
-.content p{
+.content p,
+.hero-content p{
     font-size:18px;
 }
+
+#startBtn{
+    width:180px;
+}
+
+/* Vision */
 
 .vision{
     flex-direction:column;
@@ -780,25 +801,43 @@ nav{
     flex-direction:column;
 }
 
-.vision-image img{
-    width:100%;
-}
-
 .small-img{
     position:static;
     width:100% !important;
-    margin-top:20px;
+    margin-top:15px;
 }
+
+/* Values */
 
 .values h1{
     font-size:45px;
 }
 
+.circles{
+    gap:15px;
+}
+
 .circle{
-    width:110px;
-    height:110px;
+    width:100px;
+    height:100px;
+    font-size:16px;
+}
+
+/* About */
+
+.about{
+    padding:70px 20px;
+}
+
+.about h2{
+    font-size:35px;
+}
+
+.about p{
     font-size:18px;
 }
+
+/* Services */
 
 .services-container{
     flex-direction:column;
@@ -814,21 +853,19 @@ nav{
 }
 
 .service-box img{
-    height:250px;
+    width:100%;
+    height:auto;
 }
 
-.about h2,
-.services-show h2{
-    font-size:36px;
-}
-
-.about p,
 .service-box p{
     font-size:18px;
 }
 
+/* Footer */
+
 footer{
     padding:40px 20px;
+    font-size:16px;
 }
 
 }
